@@ -1,0 +1,8 @@
+<h1><%= @pet.name %></h1>
+<p>
+	<%= @pet.name %> is a <%= @pet.age %> year old <%= @pet.species %>. <%= @pet.name %> is
+	<% unless @pet.available %>
+		not
+	<% end %>
+	available for adoption.
+</p>
